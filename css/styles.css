@@ -158,8 +158,8 @@ ul {
   width: 16px;
   height: 12px;
   fill: currentColor;
-  transition: color 250ms var(--timing-function);
 }
+
 .link-envelope:hover,
 .link-envelope:focus {
   color: var(--accent-color);
@@ -170,8 +170,8 @@ ul {
   width: 10px;
   height: 16px;
   fill: currentColor;
-  transition: color 250ms var(--timing-function);
 }
+
 .link-smartphone:hover,
 .link-smartphone:focus {
   color: var(--accent-color);
@@ -200,6 +200,8 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+/* Hero */
 
 .hero {
   padding-top: 200px;
@@ -273,7 +275,8 @@ ul {
   height: 100vh;
   z-index: 3;
   opacity: 1;
-  transition: opacity 500ms var(--timing-function);
+  transition: opacity 500ms var(--timing-function),
+    visibility 500ms var(--timing-function);
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -281,8 +284,6 @@ ul {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: opacity 500ms var(--timing-function),
-    visibility 500ms var(--timing-function);
 }
 
 .backdrop.is-hidden .modal {
@@ -522,8 +523,7 @@ img {
   color: var(--icon-color);
   border-radius: 50px;
   transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function),
-    border-radius 250ms var(--timing-function);
+    color 250ms var(--timing-function);
 }
 
 .link-social:hover,
@@ -556,7 +556,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px, 32px;
   width: 170px;
   height: 92px;
   color: var(--icon-color);
@@ -592,8 +591,28 @@ img {
   margin-right: 8px;
 }
 
+.button {
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  color: var(--title-text-color);
+  background-color: var(--second-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  transition: color 250ms var(--timing-function),
+    box-shadov 250ms var(--timing-function);
+}
+
+.button.primary {
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+}
+
 .filters .button:hover,
 .filters .button:focus {
+  color: var(--second-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -641,9 +660,9 @@ img {
   margin-bottom: 0;
 }
 .flex-link {
+  display: block;
   text-decoration: none;
-  transition: box-shadov 250ms var(--timing-function),
-    border 250ms var(--timing-function);
+  transition: box-shadov 250ms var(--timing-function);
 }
 
 .flex-link:hover .submenu,
@@ -655,7 +674,6 @@ img {
 .flex-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  border: 1px solid var(--solid);
 }
 
 .product {
