@@ -602,17 +602,14 @@ img {
   line-height: 1.63;
   text-align: center;
   transition: color 250ms var(--timing-function),
-    box-shadov 250ms var(--timing-function);
-}
-
-.button.primary {
-  color: var(--second-text-color);
-  background-color: var(--accent-color);
+    box-shadow 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 
 .filters .button:hover,
 .filters .button:focus {
-  color: var(--second-accent-color);
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -662,7 +659,7 @@ img {
 .flex-link {
   display: block;
   text-decoration: none;
-  transition: box-shadov 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .flex-link:hover .submenu,
